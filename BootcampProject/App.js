@@ -52,13 +52,24 @@ const LuisProfileScreen = ({ navigation, route }) => {
   return <Text>This is my profile</Text>;
 };
 
+
+
 const NolaProfileScreen = ({ navigation, route }) => {
-  return <Text>This is my profile</Text>;
+  return (
+    <View>
+      <Text style = {{fontSize: '75px', fontFamily: 'Futura'}}>Hello!!</Text>
+      <Text style = {{fontSize: '50px', fontFamily: 'Times New Roman'}}> the sum is {addMe(11,19)}</Text>
+    </View>
+  
+  );
 };
 
 const VeraniaProfileScreen = ({ navigation, route }) => {
   return <Text>This is my profile</Text>;
 };
+const addMe = (firstNumber, secondNumber) => {
+  return firstNumber + secondNumber;
+}; 
 
 const App = () => {
   return (
