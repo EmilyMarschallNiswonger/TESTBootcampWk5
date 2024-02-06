@@ -1,6 +1,6 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
@@ -57,8 +57,25 @@ const NolaProfileScreen = ({ navigation, route }) => {
 };
 
 const VeraniaProfileScreen = ({ navigation, route }) => {
-  return <Text>This is my profile</Text>;
+  return (
+    <View>
+      <Text style={{ fontSize: "75px", fontFamily: "Roboto" }}>
+        {" "}
+        Hello y'all this is my cool new profile! :P
+      </Text>
+    </View>
+  );
 };
+
+//const styles = StyleSheet.create({
+//container: {
+//marginTop: 50,
+//},
+//bigPurple: {
+//color: "purple",
+//fontWeight: "bold",
+//},
+//});
 
 const App = () => {
   return (
