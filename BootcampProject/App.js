@@ -1,7 +1,8 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { Text, View, Button } from "react-native";
+import { StyleSheet,Text, View, Button } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -49,7 +50,11 @@ const KaitlinProfileScreen = ({ navigation, route }) => {
 };
 
 const LuisProfileScreen = ({ navigation, route }) => {
-  return <Text>This is my profile</Text>;
+  return ( 
+  <View style={styles.container}>
+    <Text style={styles.red}>This is my profile</Text>
+  </View>
+  );
 };
 
 const NolaProfileScreen = ({ navigation, route }) => {
@@ -59,6 +64,23 @@ const NolaProfileScreen = ({ navigation, route }) => {
 const VeraniaProfileScreen = ({ navigation, route }) => {
   return <Text>This is my profile</Text>;
 };
+
+
+//imported// 
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 50,
+  },
+  bigBlue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+  },
+});
 
 const App = () => {
   return (
