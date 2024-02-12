@@ -67,7 +67,7 @@ const App = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "Welcome" }}
+          options={{ title: "Welcome!" }}
         />
         <Stack.Screen name="AlexaProfile" component={AlexaProfileScreen} />
         <Stack.Screen name="AlexisProfile" component={AlexisProfileScreen} />
