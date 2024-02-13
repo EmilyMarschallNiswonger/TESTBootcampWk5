@@ -51,8 +51,9 @@ const KaitlinProfileScreen = ({ navigation, route }) => {
 
 const LuisProfileScreen = ({ navigation, route }) => {
   return ( 
-  <View style={styles.container}>
-    <Text style={styles.red}>This is my profile</Text>
+  <View style={luisstyles.container}>
+    <Text style={luisstyles.wcolor}>This is my profile</Text>
+    <Text style={luisstyles.wcolor}>:3</Text>
   </View>
   );
 };
@@ -68,17 +69,23 @@ const VeraniaProfileScreen = ({ navigation, route }) => {
 
 //imported// 
 
-const styles = StyleSheet.create({
+const luisstyles = StyleSheet.create({
   container: {
-    marginTop: 50,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'forestgreen', 
   },
   bigBlue: {
     color: 'blue',
     fontWeight: 'bold',
     fontSize: 30,
   },
-  red: {
-    color: 'red',
+  wcolor: {
+    color: 'ghostwhite',
+    fontFamily: 'Trebuchet MS', 
+    fontWeight: 'bold',
+    fontSize: 30, 
   },
 });
 
