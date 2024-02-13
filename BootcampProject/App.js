@@ -1,6 +1,6 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { Text, View, Button } from "react-native";
+import { Text, View, Button, StyleSheet, Image } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
@@ -52,13 +52,47 @@ const LuisProfileScreen = ({ navigation, route }) => {
   return <Text>This is my profile</Text>;
 };
 
+const NolaStyle = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#0A3E25',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: "50px"
+  },
+
+  text1: {
+    fontSize: 75,
+    fontWeight: '800',
+    fontFamily: 'Futura',
+    color: '#7AB083'
+  },
+
+  text2: {
+    fontSize: 30,
+    fontWeight: '600',
+    fontFamily: 'Times New Roman',
+    color: '#517557',
+    textAlign: 'center',
+  },
+
+  image: {
+      width: '67%',
+      height: '45%',
+      
+  },
+
+
+});
 
 
 const NolaProfileScreen = ({ navigation, route }) => {
+  const napImage = {uri: "https://thumb.ac-illust.com/c0/c0bdb4834d2131f8c0b05641208f6d6b_t.jpeg"}
   return (
-    <View>
-      <Text style = {{fontSize: '75px', fontFamily: 'Futura'}}>Hello!!</Text>
-      <Text style = {{fontSize: '50px', fontFamily: 'Times New Roman'}}> the sum is {addMe(11,19)}</Text>
+    <View style ={NolaStyle.container}>
+      <Text style = {NolaStyle.text1}>Hello!!</Text>
+      <Text style = {NolaStyle.text2}> I am going to go home and take a nap</Text>
+      <Image source = {napImage} style = {NolaStyle.image}></Image>
     </View>
   
   );
