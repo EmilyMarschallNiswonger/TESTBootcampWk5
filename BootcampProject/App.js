@@ -1,6 +1,6 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { Text, View, Button } from "react-native";
+import { Text, View, Button, StyleSheet } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
@@ -37,8 +37,37 @@ const HomeScreen = ({ navigation }) => {
 };
 
 const AlexaProfileScreen = ({ navigation, route }) => {
-  return <Text>This is my profile</Text>;
+  return (
+    <View style={alexaStyles.container}>
+      <Text
+        style={{
+          color: "green",
+          // height: 40,
+          // borderColor: "pink",
+          // borderWidth: 3,
+          // backgroundColor: "lavenderblush",
+          // flex: 1,
+          // alignItems: "center",
+          // justifyContent: "center",
+        }}
+      >
+        {" "}
+        My Profile Asf{" "}
+      </Text>
+    </View>
+  );
 };
+
+const alexaStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    borderColor: "pink",
+    borderWidth: 3,
+    backgroundColor: "lavenderblush",
+  },
+});
 
 const AlexisProfileScreen = ({ navigation, route }) => {
   return <Text>This is my profile</Text>;
