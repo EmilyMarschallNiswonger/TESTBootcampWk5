@@ -8,31 +8,53 @@ const Stack = createNativeStackNavigator();
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View>
-      <Button
-        title="Go to Alexa's profile"
-        onPress={() => navigation.navigate("AlexaProfile", { name: "Jane" })}
-      />
-      <Button
-        title="Go to Alexis's profile"
-        onPress={() => navigation.navigate("AlexisProfile", { name: "Jane" })}
-      />
-      <Button
-        title="Go to Kaitlins's profile"
-        onPress={() => navigation.navigate("KaitlinProfile", { name: "Jane" })}
-      />
-      <Button
-        title="Go to Luis's profile"
-        onPress={() => navigation.navigate("LuisProfile", { name: "Jane" })}
-      />
-      <Button
-        title="Go to Nola's profile"
-        onPress={() => navigation.navigate("NolaProfile", { name: "Jane" })}
-      />
-      <Button
-        title="Go to Verania's profile"
-        onPress={() => navigation.navigate("VeraniaProfile", { name: "Jane" })}
-      />
+    <View style={Homestyles.container}>
+      <View style={Homestyles.button}>
+        <Button
+          title="Go to Alexa's profile"
+          onPress={() => navigation.navigate("AlexaProfile", { name: "Jane" })}
+          color="#000000"
+        />
+      </View>
+      <View style={Homestyles.button}>
+        <Button
+          title="Go to Alexis's profile"
+          onPress={() => navigation.navigate("AlexisProfile", { name: "Jane" })}
+          color="#000000"
+        />
+      </View>
+      <View style={Homestyles.button}>
+        <Button
+          title="Go to Kaitlins's profile"
+          onPress={() =>
+            navigation.navigate("KaitlinProfile", { name: "Jane" })
+          }
+          color="#000000"
+        />
+      </View>
+      <View style={Homestyles.button}>
+        <Button
+          title="Go to Luis's profile"
+          onPress={() => navigation.navigate("LuisProfile", { name: "Jane" })}
+          color="#000000"
+        />
+      </View>
+      <View style={Homestyles.button}>
+        <Button
+          title="Go to Nola's profile"
+          onPress={() => navigation.navigate("NolaProfile", { name: "Jane" })}
+          color="#000000"
+        />
+      </View>
+      <View style={Homestyles.button}>
+        <Button
+          title="Go to Verania's profile"
+          onPress={() =>
+            navigation.navigate("VeraniaProfile", { name: "Jane" })
+          }
+          color="#000000"
+        />
+      </View>
     </View>
   );
 };
@@ -134,6 +156,27 @@ const luisstyles = StyleSheet.create({
   },
 });
 
+const Homestyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: "column",
+    backgroundColor: "#0C2B35",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    padding: 1,
+  },
+
+  button: {
+    flex: 2,
+    justifyContent: "center",
+    backgroundColor: "#FCF6E5",
+    height: "20%",
+    width: "70%",
+    margin: "2%",
+    borderRadius: 10,
+  },
+});
+
 const App = () => {
   return (
     <NavigationContainer>
@@ -141,7 +184,7 @@ const App = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "Welcome" }}
+          options={{ title: "Welcome!" }}
         />
         <Stack.Screen name="AlexaProfile" component={AlexaProfileScreen} />
         <Stack.Screen name="AlexisProfile" component={AlexisProfileScreen} />
