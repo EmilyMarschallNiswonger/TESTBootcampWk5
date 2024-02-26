@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { Text, View, Button, StyleSheet, Image } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+
 const Stack = createNativeStackNavigator();
 
 const HomeScreen = ({ navigation }) => {
@@ -49,7 +50,12 @@ const KaitlinProfileScreen = ({ navigation, route }) => {
 };
 
 const LuisProfileScreen = ({ navigation, route }) => {
-  return <Text>This is my profile</Text>;
+  return ( 
+  <View style={luisstyles.container}>
+    <Text style={luisstyles.wcolor}>This is my profile</Text>
+    <Text style={luisstyles.wcolor}>:3</Text>
+  </View>
+  );
 };
 
 const NolaStyle = StyleSheet.create({
@@ -104,6 +110,29 @@ const VeraniaProfileScreen = ({ navigation, route }) => {
 const addMe = (firstNumber, secondNumber) => {
   return firstNumber + secondNumber;
 }; 
+
+
+//imported// 
+
+const luisstyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'forestgreen', 
+  },
+  bigBlue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  wcolor: {
+    color: 'ghostwhite',
+    fontFamily: 'Trebuchet MS', 
+    fontWeight: 'bold',
+    fontSize: 30, 
+  },
+});
 
 const App = () => {
   return (
