@@ -58,24 +58,68 @@ const NolaProfileScreen = ({ navigation, route }) => {
 
 const VeraniaProfileScreen = ({ navigation, route }) => {
   return (
-    <View>
-      <Text style={{ fontSize: "75px", fontFamily: "Roboto" }}>
-        {" "}
-        Hello y'all this is my cool new profile! :P
+    <View
+      style={[
+        Veraniastyles.container,
+        {
+          flexDirection: "column-reverse",
+        },
+      ]}
+    >
+      <Text style={Veraniastyles.pink}>
+        Hello y'all this is my cool new profile :P!
+      </Text>
+      <Text style={Veraniastyles.red}>
+        Hello y'all this is my cool new profile :P!
+      </Text>
+      <Text style={Veraniastyles.cyan}>
+        Hello y'all this is my cool new profile :P!
+      </Text>
+      <Text style={Veraniastyles.magenta}>
+        Hello y'all this is my cool new profile :P!
+      </Text>
+      <Text style={Veraniastyles.darkgreen}>
+        Hello y'all this is my cool new profile :P!
       </Text>
     </View>
   );
 };
 
-//const styles = StyleSheet.create({
-//container: {
-//marginTop: 50,
-//},
-//bigPurple: {
-//color: "purple",
-//fontWeight: "bold",
-//},
-//});
+const Veraniastyles = StyleSheet.create({
+  container: {
+    marginTop: 50,
+  },
+  pink: {
+    color: "pink",
+    fontWeight: "bold",
+    fontSize: 58,
+    fontFamily: "Roboto",
+  },
+  red: {
+    color: "red",
+    fontWeight: "bold",
+    fontSize: 58,
+    fontFamily: "Roboto",
+  },
+  cyan: {
+    color: "cyan",
+    fontWeight: "bold",
+    fontSize: 58,
+    fontFamily: "Roboto",
+  },
+  magenta: {
+    color: "magenta",
+    fontWeight: "bold",
+    fontSize: 58,
+    fontFamily: "Roboto",
+  },
+  darkgreen: {
+    color: "darkgreen",
+    fontWeight: "bold",
+    fontSize: 58,
+    fontFamily: "Roboto",
+  },
+});
 
 const App = () => {
   return (
