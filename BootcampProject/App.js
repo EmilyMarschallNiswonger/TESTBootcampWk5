@@ -46,9 +46,7 @@ const AlexaProfileScreen = ({ navigation, route }) => {
           // borderColor: "pink",
           // borderWidth: 3,
           // backgroundColor: "lavenderblush",
-          // flex: 1,
-          // alignItems: "center",
-          // justifyContent: "center",
+          
         }}
       >
         {" "}
