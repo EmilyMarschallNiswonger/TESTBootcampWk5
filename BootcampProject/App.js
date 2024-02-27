@@ -60,8 +60,35 @@ const HomeScreen = ({ navigation }) => {
 };
 
 const AlexaProfileScreen = ({ navigation, route }) => {
-  return <Text>This is my profile</Text>;
+  return (
+    <View style={alexaStyles.container}>
+      <Text
+        style={{
+          color: "green",
+          // height: 40,
+          // borderColor: "pink",
+          // borderWidth: 3,
+          // backgroundColor: "lavenderblush",
+          
+        }}
+      >
+        {" "}
+        My Profile Asf{" "}
+      </Text>
+    </View>
+  );
 };
+
+const alexaStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    borderColor: "pink",
+    borderWidth: 3,
+    backgroundColor: "lavenderblush",
+  },
+});
 
 const AlexisProfileScreen = ({ navigation, route }) => {
   const AlexisProfileScreen = ({ navigation, route }) => {
