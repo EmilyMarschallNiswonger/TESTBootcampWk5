@@ -64,7 +64,23 @@ const AlexaProfileScreen = ({ navigation, route }) => {
 };
 
 const AlexisProfileScreen = ({ navigation, route }) => {
-  return <Text>This is my profile</Text>;
+  const AlexisProfileScreen = ({ navigation, route }) => {
+    return(
+      <View>
+        <Text style = {AlexisStyles.red}>Hello! Pleasure to have you here but in red</Text>
+        <Text style = {AlexisStyles.orange}>Hello! Pleasure to have you here but in red</Text>
+        <Text style = {AlexisStyles.yellow}>Hello! Pleasure to have you here but in red</Text>
+        <Text style = {AlexisStyles.green}>Hello! Pleasure to have you here but in red</Text>
+        <Text style = {AlexisStyles.blue}>Hello! Pleasure to have you here but in red</Text>
+        <Text style = {AlexisStyles.purple}>Hello! Pleasure to have you here but in red</Text>
+        <Text style = {AlexisStyles.orange}>Hello! Pleasure to have you here but in orange</Text>
+        <Text style = {AlexisStyles.yellow}>Hello! Pleasure to have you here but in yellow</Text>
+        <Text style = {AlexisStyles.green}>Hello! Pleasure to have you here but in green</Text>
+        <Text style = {AlexisStyles.blue}>Hello! Pleasure to have you here but in blue</Text>
+        <Text style = {AlexisStyles.purple}>Hello! Pleasure to have you here but in purple</Text>
+      </View>
+    ); 
+  };
 };
 
 const KaitlinProfileScreen = ({ navigation, route }) => {
@@ -235,6 +251,48 @@ const Veraniastyles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 58,
     fontFamily: "Roboto",
+  },
+});
+
+const AlexisStyles = StyleSheet.create({
+  container:  {
+    marginTop:  50,
+  },
+  red:  {
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'Times New Roman',
+  },
+  orange:  {
+    color: 'orange',
+    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'Times New Roman',
+  },
+  yellow:  {
+    color: 'yellow',
+    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'Times New Roman',
+  },
+  green:  {
+    color: 'green',
+    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'Times New Roman',
+  },
+  blue:  {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'Times New Roman',
+  },
+  purple:  {
+    color: 'purple',
+    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'Times New Roman',
   },
 });
 
